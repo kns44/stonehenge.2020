@@ -2,8 +2,13 @@
 <head>
 <title>Stonehenge</title>
 </head>
-<body>
-<svg viewbox="0 0 1200 800">  
+<body style="background-color:#b0e0e6;">
+<svg viewbox="0 0 1200 800"> 
+<!--พระอาทิตย์-->
+  <circle class="moon" cx="900" cy="125" r="50" fill="#eba434"/>  
+  <circle cx="900" cy="125" r="75" fill="hsl(60,60%, 75%, 70%)">
+    <animate attributeName="r" values="55;65;55;55" dur="2.5s" repeatCount="indefinite" />
+  </circle>
 <!--  หิน  -->
 <g id="stone">
   <path d="M 100 400 L 600 200 L 1100 400 L 600 600"
@@ -105,8 +110,7 @@
     <!--T4-->
     <path d="M 750 250 L 760 290 L 760 266 L 775 275" fill="hsl(74,44%,52%)"></path>
     <path d="M 750 250 L 740 290 L 750 275 L 760 290" fill="hsl(87,45%,42%)"></path>
-  
-</g>
 
+</g>
 </body>
 </html>
