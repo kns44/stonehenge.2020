@@ -4,11 +4,43 @@
 </head>
 <body style="background-color:#b0e0e6;">
 <svg viewbox="0 0 1200 800"> 
+<!--bird-->
+  <g id="b1">
+    <path d="M500 80 h5 v7"/>
+    <path d="M525 90 h7 v5"/>
+    <path d="M560 75 h7 v5"/>
+    <path d="M545 100 h5 v7"/>
+  </g>
+  <g id="b2">
+    <path d="M1075 280 h5 v7"/>
+    <path d="M1025 290 h7 v5"/>
+    <path d="M1050 275 h7 v5"/>
+    <path d="M1045 300 h5 v7"/>
+  </g>
 <!--พระอาทิตย์-->
   <circle class="moon" cx="900" cy="125" r="50" fill="#eba434"/>  
   <circle cx="900" cy="125" r="75" fill="hsl(60,60%, 75%, 70%)">
     <animate attributeName="r" values="55;65;55;55" dur="2.5s" repeatCount="indefinite" />
   </circle>
+ <!-- cloud -->
+  <g id="c1">
+    <path fill="#F7F7F7" d="M900 200 L930 220 L950 190 Z"/>
+    <path fill="#DDDDDD" d="M900 200 L930 220 L940 240 Z"/>
+    <path fill="#F9F9F9" d="M950 190 L930 220 L975 215 Z"/>
+    <path fill="#F9F9F9" d="M975 215 L1000 200 L990 220 Z"/>
+    <path fill="#CACACA" d="M990 220 L1000 200 L1040 230 Z"/>
+    <path fill="#D3D5D5" d="M1040 230 L950 230 L930 220 L975 215 Z"/>
+    <path fill="#B8B8B8" d="M1040 230 L990 250 L940 240 L930 220 L930 220 Z"/>
+  </g>
+  <g id="c2">
+    <path fill="#F7F7F7" d="M700 100 L730 120 L750 90 Z"/>
+    <path fill="#DDDDDD" d="M700 100 L730 120 L740 140 Z"/>
+    <path fill="#F9F9F9" d="M750 90 L730 120 L775 115 Z"/>
+    <path fill="#F9F9F9" d="M775 115 L800 100 L790 120 Z"/>
+    <path fill="#CACACA" d="M790 120 L800 100 L840 130 Z"/>
+    <path fill="#D3D5D5" d="M840 130 L750 130 L730 120 L775 115 Z"/>
+    <path fill="#B8B8B8" d="M840 130 L790 150 L740 140 L730 120 L730 120 Z"/>
+  </g>
 <!--  หิน  -->
 <g id="stone">
   <path d="M 100 400 L 600 200 L 1100 400 L 600 600"
@@ -110,7 +142,18 @@
     <!--T4-->
     <path d="M 750 250 L 760 290 L 760 266 L 775 275" fill="hsl(74,44%,52%)"></path>
     <path d="M 750 250 L 740 290 L 750 275 L 760 290" fill="hsl(87,45%,42%)"></path>
-
 </g>
+
+  <animateMotion xlink:href="#b1" dur="10s" repeatCount="indefinite"
+      path="M10,25 C10,-25 90,75 90,25 C90-25 10,75 10,25 z" />
+  <animateMotion xlink:href="#b2" dur="13s" repeatCount="indefinite"
+      path="M10,25 C10,-25 90,75 90,25 C90-25 10,75 10,25 z" />
+  <animateMotion xlink:href="#c1" dur="13s" repeatCount="indefinite"
+      path="M10,25 h80 h-80 z" />
+  <animateMotion xlink:href="#c2" dur="8s" repeatCount="indefinite"
+      path="M10,25 h80 h-80 z" />
+
+</svg>
+
 </body>
 </html>
